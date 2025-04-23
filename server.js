@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());  // Enable CORS for all routes
 
 // MongoDB connection
-const db = 'mongodb://localhost:27017/vocab-builder';
+const db = 'mongodb+srv://001343302:12072004@mycluster.zrjg6.mongodb.net/vocab-builder';
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected successfully'))
     .catch(err => console.error('MongoDB connection error:', err));
